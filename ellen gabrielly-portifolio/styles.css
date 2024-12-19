@@ -1,0 +1,193 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo Base */
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+
+}
+
+
+
+
+
+.linha-dourada {
+  border-top: 2px solid #d4af37;
+  width: 100%;
+  margin: 0;
+}
+
+.hero {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+/* Sobre mim */
+.sobre-texto {
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+.circulo {
+  width: 150px; /* Tamanho menor do círculo */
+  height: 150px; /* Tamanho menor do círculo */
+  border-radius: 50%; /* Borda circular */
+  overflow: hidden; /* Esconde o excesso da imagem */
+  background-color: gray; /* Fundo cinza padrão */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circulo img {
+  width: 100%; /* A imagem ocupa todo o círculo */
+  height: 100%;
+  object-fit: cover; /* Ajusta sem distorção */
+}
+
+
+/* Configuração para as colunas, utilizando flexbox */
+.col-md-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding: 15px; /* Adiciona um pequeno padding para que o conteúdo não fique colado */
+}
+
+/* Ajuste do tamanho e posicionamento dos ícones */
+.icone img {
+  max-width: 60px; /* Limita o tamanho dos ícones */
+  height: auto; /* Mantém a proporção das imagens */
+  margin-bottom: 10px; /* Espaçamento entre o ícone e o título */
+}
+
+/* Melhorando o alinhamento do ícone no centro */
+.icone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* Tamanho e espaçamento entre título e descrição */
+.col-md-3 h5 {
+  font-size: 1.25rem; /* Tamanho do título */
+  margin-bottom: 10px; /* Espaço entre o título e o parágrafo */
+}
+
+.col-md-3 p {
+  font-size: 0.9rem; /* Tamanho do parágrafo */
+  margin: 0; /* Remove margens extras */
+}
+
+/* Garantir que o título da seção fique centralizado */
+h3 {
+  text-align: center;
+  font-size: 2rem; /* Ajusta o tamanho da fonte */
+  margin-bottom: 30px; /* Espaço abaixo do título */
+}
+
+/* Ajuste de responsividade para as colunas */
+@media (max-width: 768px) {
+  .col-md-3 {
+    flex: 0 0 50%; /* Coloca duas colunas por linha em telas menores */
+  }
+}
+
+@media (max-width: 576px) {
+  .col-md-3 {
+    flex: 0 0 100%; /* Coloca uma coluna por linha em telas muito pequenas */
+  }
+}
+
+/* Projetos */
+.projeto-placeholder {
+  width: 100%;
+  max-width: 600px;
+  height: 200px;
+  background-color: #888;
+  margin: 0 auto;
+  border: 1px solid #555;
+}
+
+/* Formulário */
+input, textarea {
+  background-color: #222;
+  color: #fff;
+  border: 1px solid #444;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #aaa;
+}
+
+form button {
+  background-color: #d4af37;
+  color: #000;
+  font-weight: bold;
+}
+
+form button:hover {
+  background-color: #b8860b;
+  color: #fff;
+}
+
+
+ #div_fixa {
+
+   position:fixed; 
+   margin:15px;
+   margin-top: 300px;
+   z-index:5000;
+   bottom: 0px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.linha-dourada {
+  border-top: 2px solid #d4af37;
+  margin: 20px 0;
+}
+
+.hero {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.circulo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: gray;
+}
+
+.circulo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+footer {
+  background-color: #111;
+  color: #d4af37;
+  text-align: center;
+  padding: 1.5rem 0;
+}
